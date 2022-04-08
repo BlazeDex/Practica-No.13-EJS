@@ -4,15 +4,21 @@
     </head>
     <body>
       <ul>
+        <!-- Condición para determinar si el número ingresado es par.-->
         <% if(number%2==0){ %>
             <h1>Par</h1>
+            <!-- Se inicia un ciclo For para imprimir una lista de números, 
+                 cuyo límite es el doble del número ingresado.-->
             <% for (var i =1; i <=number*2;  i++) { %>
             <li>  
               <%= i %>  
               <% } %>
             </li>
+        <!-- Si lo anterior no se cumple se indicará que el número es impar.-->
           <% } else{ %>  
             <h1>Impar</h1>
+        <!-- Se inicia un ciclo For para imprimir una lista de números,
+             cuyo límite es el número impar.-->
             <% for (var i =1; i <=number;  i++ ) { %>
              <li>
               <%= i %>               
